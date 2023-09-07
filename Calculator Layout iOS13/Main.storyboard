@@ -19,24 +19,24 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ihT-3N-7AX">
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="icc-KM-dlW">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c8G-s0-sv3">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="135"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" 0  " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gC2-i9-XzD">
-                                                <rect key="frame" x="0.0" y="0.0" width="374" height="135"/>
+                                                <rect key="frame" x="20" y="0.0" width="374" height="135"/>
                                                 <edgeInsets key="layoutMargins" top="8" left="8" bottom="8" right="20"/>
                                                 <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7bX-wC-5La">
-                                                <rect key="frame" x="394" y="0.0" width="20" height="135"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="width" constant="20" id="Fdq-ZF-zfS"/>
-                                                </constraints>
-                                            </view>
                                         </subviews>
-                                    </stackView>
+                                        <constraints>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="leading" secondItem="c8G-s0-sv3" secondAttribute="leading" constant="20" id="3da-SZ-kSs"/>
+                                            <constraint firstAttribute="trailing" secondItem="gC2-i9-XzD" secondAttribute="trailing" constant="20" id="JSS-9n-dVQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="gC2-i9-XzD" secondAttribute="bottom" id="OF1-D8-Wpq"/>
+                                            <constraint firstItem="gC2-i9-XzD" firstAttribute="top" secondItem="c8G-s0-sv3" secondAttribute="top" id="dbc-Sh-Kag"/>
+                                        </constraints>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ycI-I4-McP">
                                         <rect key="frame" x="0.0" y="136" width="414" height="134.5"/>
                                         <subviews>
@@ -231,7 +231,6 @@
                                     <constraint firstItem="KVs-co-bIz" firstAttribute="centerX" secondItem="ihT-3N-7AX" secondAttribute="centerX" id="Sht-eP-ZuE"/>
                                     <constraint firstItem="Qcu-jH-4GO" firstAttribute="centerX" secondItem="ihT-3N-7AX" secondAttribute="centerX" id="Vfv-ed-PpU"/>
                                     <constraint firstItem="ycI-I4-McP" firstAttribute="centerX" secondItem="ihT-3N-7AX" secondAttribute="centerX" id="qsJ-2b-RCM"/>
-                                    <constraint firstItem="icc-KM-dlW" firstAttribute="centerX" secondItem="ihT-3N-7AX" secondAttribute="centerX" id="rX7-p8-aWb"/>
                                 </constraints>
                             </stackView>
                         </subviews>
